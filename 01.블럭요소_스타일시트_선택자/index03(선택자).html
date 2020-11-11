@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style type="text/css">
+    /* 디자인 시작전에 모든 전역선택자로 선언하고 시작한다*/
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /* 모든 b태그에 적용 */
+    b {
+      color: red;
+    }
+    /* ul과 li에 동시 적용 */
+    ul,
+    li {
+      list-style: none;
+    }
+    #a1 {
+      color: green;
+    }
+    .b1 {
+      color: salmon;
+    }
+    /* abox안의 자식 p태그 */
+    .abox p {
+      color: tomato;
+    }
+    /* bbox안의 바로 다음 자식 p 태그 */
+    .bbox > p {
+      color: teal;
+    }
+  </style>
+
+  <body>
+    <b>이것이 태그 선택자인가</b>
+
+    <ul>
+      <li>다중선택자</li>
+      <li>다중선택자</li>
+    </ul>
+    <hr />
+
+    <p id="a1">아이디선택자는 `#이름`</p>
+    <p class="b1">클래스선택자는 `.이름`</p>
+    <hr />
+    <div class="abox">
+      abox
+      <p>하위선택자</p>
+      <p>하위선택자</p>
+      <ul>
+        <li><p>하위선택자</p></li>
+        <li><p>하위선택자</p></li>
+      </ul>
+    </div>
+    <hr />
+    bbox
+    <div class="bbox">
+      <p>자식선택자 ></p>
+      <p>자식선택자 ></p>
+      <ul>
+        <li><p>자식 선택자 공백</p></li>
+        <li><p>자식 선택자 공백</p></li>
+      </ul>
+    </div>
+  </body>
+</html>

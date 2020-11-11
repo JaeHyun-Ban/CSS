@@ -1,0 +1,6 @@
+/* CSS파일의 import */
+@import url("common.css");
+
+span {
+  color: blue;
+}

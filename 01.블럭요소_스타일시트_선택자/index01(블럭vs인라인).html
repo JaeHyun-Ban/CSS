@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+      주석: alt + shift + a
+      html요소는 블럭과 인라인 요소로 나뉩니다
+      블럭요소
+      1. 블럭요소는 블럭의 크기와 줄바꿈
+      2. 블럭요소 안에는 블럭요소를 자식으로 가질 수 있다.
+     -->
+    <!--글을 작성하는 태그-->
+    <h1>블럭요소</h1>
+    <p>블럭요소</p>
+    <!--division = 아무 의미 없는 공간-->
+    <div>블럭요소</div>
+    <ul>
+      <li>블럭요소</li>
+      <li>블럭요소</li>
+    </ul>
+    <!-- section = 본문의 내용 작성하는 공간 -->
+    <section>블럭요소</section>
+    <aside>블럭요소</aside>
+    <form action="">블럭요소</form>
+
+    <hr />
+    <!-- 
+    인라인요소
+    1.인라인 요소는 줄바꿈이 없다(한줄로 출력)
+    2.※인라인 요소는 블럭요소가 들어갈 수 없다
+     -->
+    <h1>인라인 요소</h1>
+    <h2>인라인 안에는 블럭을 넣을 수 없다</h2>
+    <a>인라인 요소</a>
+    <img alt="이미지: 인라인 요소" />
+    <b>인라인 요소</b>
+    <strong>인라인 요소</strong>
+    <span>div와 기능은 같은 인라인</span>
+    <label>이름쓰는곳(label)</label>
+    <input />
+    <!-- 인라인 안에 블럭을 넣으면 인라인의 특성이 사라지고 블럭만남는다 -->
+    <!-- 아래는 잘못된 태그 형태-->
+    <a><div>sdfsdf</div></a>
+    <ul>
+      <a><li>목록</li></a>
+      <li>
+        <span>
+          <i><a></a></i>
+        </span>
+      </li>
+    </ul>
+  </body>
+</html>
