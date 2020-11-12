@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      p {
+        /* 블럭이라 블럭에 줄을 생성해준다 */
+        border: 1px solid #777; /* 윤곽 */
+      }
+      .tx1 {
+        color: rgba(115, 25, 151, 0.616);
+        text-align: left;
+        font-size: 20px; /* 글자 크기 */
+        font-weight: 600; /* 글자 굵기 */
+      }
+      .tx2 {
+        color: rgba(228, 147, 72, 0.911);
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .tx3 {
+        color: rgba(143, 27, 75, 0.911);
+        text-align: right;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      /* vertical-align은 기준점을 잡아주어야 한다 */
+      /* 기준이 잡혀있는 나란히 배치된 요소에 적용이 가능 */
+      .tx4 img {
+        vertical-align: top;
+      }
+      .tx5 img {
+        vertical-align: middle;
+      }
+      .tx6 img {
+        vertical-align: bottom;
+      }
+      .box {
+        /* 글자의 높이 위치화 글자간 간격을 똑같이주면 
+        고정된 위치에서 가운데 정렬처럼 보이게 된다 */
+        /* (중요)기준이 되는 태그가 없을 때, 
+        박스 높이와 line-height를 동일하게 맞추면 문단 가운데 정렬이 된다 
+        (글자 가운데 정렬효과)
+        */
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- text-align -->
+    <h3>안녕?</h3>
+    <p class="tx1">안녕하세요</p>
+    <p class="tx2">안녕하세요?</p>
+    <p class="tx3">안녕하세요!</p>
+
+    <p class="tx4">
+      안녕
+      <img src="img/css3.png" alt="css" /><!-- img: 인라인 -->
+    </p>
+    <p class="tx5">
+      하이
+      <img src="img/html5.png" alt="html" />
+    </p>
+    <p class="tx6">
+      헬로
+      <img src="img/jquery.png" alt="jquery" />
+    </p>
+    <p class="box">hello world?</p>
+  </body>
+</html>

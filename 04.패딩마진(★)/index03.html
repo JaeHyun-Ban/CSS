@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      body {
+        background-image: url(img/bg_grid.jpg);
+      }
+      p {
+        width: 600px;
+        min-height: 100px;
+        border: solid rgb(66, 22, 95);
+        /* top, right, bottom, left (시계방향) */
+        margin: 10px 10px 10px 10px;
+        /* top + bottom, left + right */
+        margin: 20px 20px;
+
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+      /* 매우 많이 사용되는 박스 가로 중앙정렬 단, 블록크기가 지정되어 있어야함
+      (현재 p태그에 크기를 지정해놓음) */
+      .ct {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <p>마진은 요소의 바깥여백, 즉 테두리와 다른 박스사이의 여백입니다<br /></p>
+    <p class="ct">
+      박스의 가로크기 width(600px) + margin(20px) + margin(20px) + 640px<br />
+      마진은 상자끼리 겹친다
+    </p>
+  </body>
+</html>

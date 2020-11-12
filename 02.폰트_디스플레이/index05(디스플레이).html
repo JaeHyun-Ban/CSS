@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- (중요)디스플레이 
+    블럭 -> 인라인(변환): display: inline;
+    인라인 -> 블럭(변환): display: block;
+    -->
+    <style type="text/css">
+      /* 블럭을 인라인으로 변경(옆으로 정렬) */
+      .list > .inner {
+        display: inline;
+      }
+      /* .list > span,
+      strong,
+      small {
+        display: block;
+      } */
+      .list > span,
+      .list > strong,
+      .list > small {
+        display: block;
+      }
+      /* 
+      인라인 요소는 정렬, 크기, 높이 설정이 불가능하다 (block은 가능)
+      inline-block: 줄바꿈은 일어나지 않고, block요소들의
+                크기, 정렬 기능을 사용할 수 있게 해준다
+      */
+      .list > a {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        /* block의 정중앙에 배치하는법 */
+        border: 1px solid #2d9cb8;
+        /* font-size: 100px; */
+      }
+      /* 숨김처리했다가 보이는 방식으로 표현할 수 있다 */
+      .box {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <div class="inner">블럭1</div>
+      <div class="inner">블럭2</div>
+      <div class="inner">블럭3</div>
+    </div>
+
+    <hr />
+    <div class="list">
+      <span>인라인</span>
+      <strong>인라인</strong>
+      <small>인라인</small>
+    </div>
+
+    <hr />
+    <div class="list">
+      <a href="#">인라인</a>
+      <a href="#">인라인</a>
+      <a href="#">인라인</a>
+    </div>
+
+    <hr />
+    <div class="box">아이디 비밀번호를 학인하실래요?</div>
+  </body>
+</html>

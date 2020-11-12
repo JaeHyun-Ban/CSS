@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* body를 초기화 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      .box {
+        background-color: black;
+        text-align: center;
+      }
+      .gnb li {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        line-height: 100px; /* 잘 기억할 것 */
+      }
+      .gnb li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 900;
+      }
+      .inner {
+        width: 1000px;
+        height: 1000px;
+        margin: 0 auto;
+        margin-top: 5px; /* 베너와 상품사이를 밀어내기 */
+        padding: 10px;
+        text-align: center;
+        border: solid black;
+      }
+      p {
+        padding: 10px, 10px, 10px, 10px;
+        display: inline-block;
+        border: 1px solid brown;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="box">
+      <ul class="gnb">
+        <li><a href="">메뉴1</a></li>
+        <li><a href="">메뉴2</a></li>
+        <li><a href="">메뉴3</a></li>
+        <li><a href="">메뉴4</a></li>
+      </ul>
+    </nav>
+    <!-- padding, margin의 초기값을 0으로 설정해서 딱 붇어있는다 -->
+    <section>
+      <img src="img/back_banner.jpg" alt="" />
+      <div class="inner">
+        <p>상품페이지<br /></p>
+        <p>상품페이지<br /></p>
+        <p>상품페이지<br /></p>
+        <p>상품페이지<br /></p>
+        <p>상품페이지<br /></p>
+      </div>
+    </section>
+  </body>
+</html>

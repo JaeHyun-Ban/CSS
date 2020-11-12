@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style type="text/css">
+      header {
+        height: 300px;
+        background-color: lightseagreen;
+      }
+      .bg_fix {
+        background-image: url(img/pixel.jpg);
+        height: 700px;
+        /* background-attachment: scroll; 기본값 */
+        background-attachment: fixed; /* 배경화면이미지가 화면을 이동해도 따라가지 않음
+         */
+      }
+      footer {
+        height: 300px;
+        background-color: navajowhite;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>안녕하세요호호</header>
+
+    <section class="bg_fix">이곳은 본문위치</section>
+
+    <footer>잘가세요호호</footer>
+  </body>
+</html>
