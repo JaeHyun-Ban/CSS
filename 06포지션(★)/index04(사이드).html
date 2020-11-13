@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      /* 시작할 때 꼭! 해줄 것 */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      /* ///////header////// */
+      header .logo {
+        text-align: center;
+        background-color: white;
+      }
+      header {
+        position: fixed;
+        /* 현재위치 그대로 고정(위치 지정 필수) */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* fixed로 띄워 올렸다면
+        z축의 좌표를 반드시 가져와야 한다
+        다른 곳의 z-index가 높다면 그곳이 위쪽에 위치한다*/
+        z-index: 10;
+      }
+      .menu {
+        text-align: center;
+        background-color: rgb(228, 183, 99);
+      }
+      .menu li {
+        display: inline-block;
+        padding: 20px;
+      }
+      .menu li:hover {
+        /* 마우스가 위로 갈 시 색상 변경 */
+        background-color: rgb(233, 230, 78);
+      }
+      .menu li a {
+        font-size: large;
+        color: rgb(0, 0, 0);
+        text-decoration: none; /* 링크 믿줄 없애주기 */
+      }
+      /* ////////section//////// */
+      section {
+        height: 1000px;
+        /* header가 올라간 길이를 확인 후 margin-top 으로 내려서 사용하자 */
+        margin-top: 163px;
+        background-color: rgb(247, 244, 220);
+      }
+      /* //////aside 바///// */
+      .side {
+        position: fixed;
+        right: 0;
+        top: 300px;
+        z-index: 10;
+      }
+      .side li {
+        background-color: #282828;
+        text-align: center;
+        padding: 10px 5px; /* 위아래, 왼쪽오른쪽 */
+        border-bottom: 1px solid #ffffff;
+      }
+      .side li a {
+        text-decoration: none;
+        color: rgb(253, 253, 253);
+        font-size: 10px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- z-index의 능력을 이용해 로그인 버튼을 이런식으로 만들어낸다 -->
+    <!-- <div class="test" style="position: fixed; z-index: 20; right: 10px; top: 0">hello world</div> -->
+    <header>
+      <div class="logo">
+        <img src="img/bgimg.png" alt="" />
+      </div>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="#">메뉴</a>
+          </li>
+          <li>
+            <a href="#">메뉴</a>
+          </li>
+          <li>
+            <a href="#">메뉴</a>
+          </li>
+          <li>
+            <a href="#">메뉴</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>본문본문</section>
+    <!-- 우측 사이드 -->
+    <aside class="side">
+      <ul class="side-list">
+        <li>
+          <a href="">
+            <p>카카오톡</p>
+            <p>asd123</p>
+          </a>
+        </li>
+        <li><a href="">전화번호</a></li>
+        <li><a href="">메뉴1</a></li>
+        <li><a href="">메뉴2</a></li>
+      </ul>
+    </aside>
+  </body>
+</html>

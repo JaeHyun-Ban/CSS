@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      .list {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid;
+        overflow: hidden;
+      }
+      .list .inner {
+        border: 1px solid;
+        float: left; /*  부모요소의 높이가 사라진다 > 따라서 부모요소에 overflow:fidden을 꼭 추가*/
+        width: 25%;
+        box-sizing: border-box;
+      }
+      /* class = content */
+      .inner .content {
+        overflow: hidden;
+      }
+      .left {
+        border: 1px solid;
+        float: left;
+      }
+      .left span {
+        display: block;
+      }
+      .right {
+        border: 1px solid;
+        float: right;
+      }
+      .clear {
+        clear: both; /* float의 영향을 받는상자의 해제 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <div class="inner">
+        <img src="img/bgimg.png" alt="물고기" />
+        <!-- 부모클래스 -->
+        <div class="content">
+          <div class="left">
+            <!-- span: inline요소의 div이다 -->
+            <span>좌측1</span>
+            <span>좌측1</span>
+            <span>좌측1</span>
+            <span>좌측1</span>
+          </div>
+          <div class="right">우측1</div>
+          <div class="clear">플롯이 해제되었습니다</div>
+        </div>
+      </div>
+      <div class="inner">
+        <img src="img/bgimg.png" alt="물고기" />
+      </div>
+      <div class="inner">
+        <img src="img/bgimg.png" alt="물고기" />
+      </div>
+      <div class="inner">
+        <img src="img/bgimg.png" alt="물고기" />
+      </div>
+    </div>
+  </body>
+</html>

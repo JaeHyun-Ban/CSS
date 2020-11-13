@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .list {
+        width: 70%;
+        margin: 0 auto;
+        border: 1px solid black;
+        overflow: hidden;
+      }
+      .list .mid,
+      .list .top,
+      .list .bottom {
+        border: 1px solid;
+      }
+      .list .mid {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .inner {
+        overflow: hidden;
+      }
+      .inner .left {
+        float: left;
+        width: 50%;
+        border: 1px solid;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <div class="top">top</div>
+      <div class="mid">
+        <div class="inner">
+          <div class="left">이게</div>
+          <div class="left">맞니?</div>
+        </div>
+      </div>
+      <div class="bottom">bottom</div>
+    </div>
+  </body>
+</html>
