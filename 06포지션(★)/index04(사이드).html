@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,15 +11,18 @@
         margin: 0;
         padding: 0;
       }
+
       ul,
       li {
         list-style: none;
       }
+
       /* ///////header////// */
       header .logo {
         text-align: center;
         background-color: white;
       }
+
       header {
         position: fixed;
         /* 현재위치 그대로 고정(위치 지정 필수) */
@@ -30,43 +34,65 @@
         다른 곳의 z-index가 높다면 그곳이 위쪽에 위치한다*/
         z-index: 10;
       }
+
       .menu {
         text-align: center;
         background-color: rgb(228, 183, 99);
       }
+
       .menu li {
         display: inline-block;
         padding: 20px;
       }
+
       .menu li:hover {
         /* 마우스가 위로 갈 시 색상 변경 */
         background-color: rgb(233, 230, 78);
       }
+
       .menu li a {
         font-size: large;
         color: rgb(0, 0, 0);
-        text-decoration: none; /* 링크 믿줄 없애주기 */
+        text-decoration: none;
+        /* 링크 믿줄 없애주기 */
       }
+
       /* ////////section//////// */
       section {
         height: 1000px;
         /* header가 올라간 길이를 확인 후 margin-top 으로 내려서 사용하자 */
         margin-top: 163px;
-        background-color: rgb(247, 244, 220);
+        background-image: url(img/bg.png);
       }
-      /* //////aside 바///// */
+
+      /* ////상품들//// */
+      .products {
+        text-align: center;
+      }
+
+      .products img {
+        margin: 1%;
+        padding: 1%;
+      }
+
+      /* //////좌측side///// */
       .side {
         position: fixed;
         right: 0;
         top: 300px;
         z-index: 10;
       }
+
       .side li {
         background-color: #282828;
         text-align: center;
-        padding: 10px 5px; /* 위아래, 왼쪽오른쪽 */
+        padding: 10px 5px;
+        /* 위아래, 왼쪽오른쪽 */
         border-bottom: 1px solid #ffffff;
       }
+
+      /* ////우측사이드//// */
+
       .side li a {
         text-decoration: none;
         color: rgb(253, 253, 253);
@@ -75,32 +101,35 @@
       }
     </style>
   </head>
+
   <body>
     <!-- z-index의 능력을 이용해 로그인 버튼을 이런식으로 만들어낸다 -->
     <!-- <div class="test" style="position: fixed; z-index: 20; right: 10px; top: 0">hello world</div> -->
     <header>
       <div class="logo">
-        <img src="img/bgimg.png" alt="" />
+        <img src="img/logo.jpg" alt="logo" />
       </div>
       <nav>
         <ul class="menu">
           <li>
-            <a href="#">메뉴</a>
+            <a href="#">메뉴1</a>
           </li>
           <li>
-            <a href="#">메뉴</a>
+            <a href="#">메뉴1</a>
           </li>
           <li>
-            <a href="#">메뉴</a>
+            <a href="#">메뉴1</a>
           </li>
           <li>
-            <a href="#">메뉴</a>
+            <a href="#">메뉴1</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <section>본문본문</section>
+    <section>
+
+    </section>
     <!-- 우측 사이드 -->
     <aside class="side">
       <ul class="side-list">
@@ -116,4 +145,5 @@
       </ul>
     </aside>
   </body>
+
 </html>

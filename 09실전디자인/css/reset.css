@@ -1,0 +1,45 @@
+/* 나의 커스텀 디자인을 작성하는 공간 */
+/* ========웹 폰트 선언======== */
+/* 나눔 고딕 */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
+
+/* ========디자인 시작시 전역 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 박스에 border-box설정 */
+}
+/* 글씨와 폰트는 body, html에 넣어주고 시작 */
+body,
+html {
+  font-family: "Nanum Gothic", sans-serif;
+  width: 100%;
+  min-width: 320px; /* body영역의 최소사이즈 */
+}
+/* 두개를 항상 넣어주고
+반응형일 때 이미지가  일그러지는 경우가 많아서 100%를 유지한다 */
+img {
+  max-width: 100%; /* 사이즈가 변해도 넓이는 유지 */
+  height: auto; /* 사이즈가 변하면 높이는 넓이에 따라서 유지 */
+}
+input,
+textarea,
+button,
+select {
+  /* 고유하게 적용되는 form관련 요소들을 제거해서 
+  여러 브라우저에서 동일한 form관련 디자인이 보이도록 처리(기본옵션) 
+  > 브라우저별로 조금씩 다르게 보이는 것을 없앰
+  참고 블로그: https://mainia.tistory.com/3671*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-apperence: none;
+  appearance: none;
+}
+
+ul,
+li,
+ol,
+dl {
+  list-style: none;
+}

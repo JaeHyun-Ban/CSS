@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      /* 시작할 때 필수 = 0, 0*/
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul,
+      li {
+        list-style: none;
+      }
+
+      /* ///////header////// */
+      header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* fixed로 띄워 올렸다면
+        z축의 좌표를 반드시 가져와야 한다
+        다른 곳의 z-index가 높다면 그곳이 위쪽에 위치한다*/
+        z-index: 10;
+      }
+
+      header .logo {
+        text-align: center;
+        padding: 20px;
+        background-image: url(img/bg.png);
+      }
+
+      .menu {
+        text-align: center;
+        background-color: rgb(228, 183, 99);
+      }
+
+      .menu li {
+        display: inline-block;
+        padding: 20px;
+      }
+
+      .menu li:hover {
+        /* 마우스가 위로 갈 시 색상 변경 */
+        background-color: rgb(233, 230, 78);
+      }
+
+      .menu li a {
+        font-size: large;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        /* 링크 믿줄 없애주기 */
+      }
+
+      /* ////////section//////// */
+      section {
+        height: 1400px;
+        /* header가 올라간 길이를 확인 후 margin-top 으로 내려서 사용하자 */
+        margin-top: 200px;
+      }
+
+      section .product {
+        text-align: center;
+      }
+
+      /* ////상품들//// */
+      .product {
+        text-align: center;
+        margin: auto;
+        /* border: 1px solid; */
+      }
+
+      .product tr td img {
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+        /* border: 1px solid; */
+      }
+
+      .product_ipod {
+        text-align: center;
+        padding: 25px;
+      }
+
+      /* //////우측side///// */
+      .right_side {
+        position: fixed;
+        right: 75px;
+        top: 500px;
+        z-index: 11;
+      }
+
+      .right_side img {
+        display: block;
+        padding-bottom: 25px;
+      }
+
+      .left_side {
+        position: fixed;
+        left: 75px;
+        top: 500px;
+        z-index: 11;
+      }
+
+      .left_side img {
+        display: block;
+        padding-bottom: 25px;
+      }
+
+      .box {
+        position: fixed;
+        z-index: 13;
+        right: 0px;
+        top: 0px;
+        width: 70px;
+        height: 60px;
+        text-align: center;
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- z-index의 능력을 이용해 로그인 버튼을 이런식으로 만들어낸다 -->
+    <!-- <div class="test" style="position: fixed; z-index: 20; right: 10px; top: 0">hello world</div> -->
+    <header>
+      <div class="box">
+        <div>asdasd</div>
+      </div>
+      <div class="logo">
+        <img src="img/logo.jpg" alt="logo" />
+      </div>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="#">메뉴1</a>
+          </li>
+          <li>
+            <a href="#">메뉴1</a>
+          </li>
+          <li>
+            <a href="#">메뉴1</a>
+          </li>
+          <li>
+            <a href="#">메뉴1</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <table class="product">
+        <tr>
+          <td><img src="img/item01.png" alt=""></td>
+          <td><img src="img/item02.png" alt=""></td>
+          <td><img src="img/item03.png" alt=""></td>
+          <td><img src="img/item04.png" alt=""></td>
+        </tr>
+        <tr>
+          <td>
+            <p>iPhone</p>
+          </td>
+          <td>
+            <p>iPod</p>
+          </td>
+          <td>
+            <p>iPad</p>
+          </td>
+          <td>
+            <p>iMac</p>
+          </td>
+        </tr>
+      </table>
+
+      <div class="product_ipod">
+        <img src="img/ipad.jpg" alt="">
+      </div>
+
+
+    </section>
+    <!-- 우측 사이드 -->
+    <aside class="right_side">
+      <div>
+        <img src="img/side03.png" alt="">
+        <img src="img/side04.png" alt="">
+      </div>
+    </aside>
+    <!-- 좌측 사이드 -->
+    <aside class="left_side">
+      <div>
+        <img src="img/side01.png" alt="">
+        <img src="img/side02.png" alt="">
+      </div>
+    </aside>
+    <!-- 빨간칸?? -->
+    <!-- <aside class="box">
+      <div>asdasd</div>
+    </aside>
+  </body> -->
+
+</html>

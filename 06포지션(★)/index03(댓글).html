@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +11,7 @@
         margin: 0px;
         padding: 0px;
       }
+
       .list-wrap {
         position: relative;
         width: 500px;
@@ -19,79 +21,95 @@
 
         background-color: rgb(173, 210, 241);
       }
+
       .list-img {
         position: absolute;
         left: 10px;
         top: 5px;
       }
+
       .list-img img {
         width: 50px;
       }
+
       .list-content,
       .list-control {
         padding-left: 60px;
       }
+
       .list-content textarea {
         width: 100%;
         height: 100px;
         box-sizing: border-box;
-        resize: vertical; /* horizontal: 수평, vertical:수직 로만 늘어남 */
-        padding: 10px; /* 글영역 안쪽여백 */
+        resize: vertical;
+        /* horizontal: 수평, vertical:수직 로만 늘어남 */
+        padding: 10px;
+        /* 글영역 안쪽여백 */
       }
+
       .list-control {
         overflow: hidden;
       }
+
       .list-control .list-input {
         float: left;
       }
+
       .list-input input {
         display: block;
         width: 100px;
       }
+
       .list-control button {
         float: right;
         display: inline;
       }
+
       /* ////////////////////////////////// */
       .list2-wrap {
         width: 500px;
         margin: 0 auto;
         border: 1px solid;
         padding: 10px;
-        overflow: hidden; /* 부모영역 */
+        overflow: hidden;
+        /* 부모영역 */
         background-color: rgb(72, 105, 134);
 
         /* 기준 */
         position: relative;
       }
+
       .list2-img {
         position: absolute;
         left: 10px;
       }
+
       .list2-img img {
         width: 50px;
       }
+
       /* 그림과 띄워놓기 */
       .list2-content {
         padding-left: 60px;
         overflow: hidden;
       }
-      .list2-control {
-        overflow: hidden;
-      }
+
       .list2-content .list2-control {
         float: left;
       }
+
       .list2-control p {
         display: block;
         width: 50px;
       }
+
       .list2-content button {
         float: right;
         display: inline;
       }
     </style>
   </head>
+
   <body>
     <div class="list-wrap">
       <div class="list-img">
@@ -124,4 +142,5 @@
       </div>
     </div>
   </body>
+
 </html>
