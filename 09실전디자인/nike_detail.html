@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 부트스트랩 참조파일 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- 개인 디자인 추가(부트스트랩 작성해 순서를 지켜지도록 한다) -->
+    <link rel="stylesheet" href="css/reset.css"><!-- 기본 -->
+    <link rel="stylesheet" href="css/style-nike_detail.css"><!-- 스타일을 작성 후 모아놓아 준다 -->
+
+    <style type="text/css">
+      
+    </style>
+
+  <body>
+    <!-- header영역 -->
+    <header class="my-header">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- 휴대폰사이즈로 줄었을 때 버튼나오는 기능 -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- 로고 영역! -->
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.svg" width="30" alt="logo">
+            </a>
+          </div>
+
+          <!-- 메뉴작성 부분 -->
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Main</a></li>
+              <li><a href="#">Form</a></li>
+              <li><a href="#">Gird Board</a></li>
+              <li><a href="#">Gird Board2</a></li>
+              <li><a href="#">Board</a></li>
+            </ul>
+            <!-- 우측 메뉴부분(드롭다운 부분) -->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">로그인 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Join</a></li>
+
+                  <li></span><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </ul>
+            <!-- 네이바 폼 영역 -->
+            <!-- navbar-left도 가능함 -->
+            <form class="navbar-form navbar-right" action="##">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="search">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-primary">검색</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 상품 -->
+    <section>
+      <div class="container">
+        <h3>상세보기<small>(쿠팡 예제)</small></h3>
+        <hr />
+
+        <ul class="row">
+          <li class="col-md-6 col col-sm-6 col-xs-12">
+            <img src="img/nike_detail/detail.jpg" alt="">
+          </li>
+          <li class="col-md-6 col col-sm-6 col-xs-12">
+            <!-- 위 -->
+            <div class="detail-info">
+              <p class="title">
+                [게릴라특가] 30일 체험가능! 벨라페이스 3컬러 LED마스크 눈마사지 겸용/4단계 시간조절/피부홈케어 + 사은품까지!
+              </p>
+              <p class="price">
+                <strong>135,000원</strong>
+              </p>
+              <p class="content">무료배송<br />
+                상품별배송 ㅣ 택배배송 ㅣ당일출고, 12시 이전 결제 건까지 해당 (주말, 공휴일 제외)</p>
+              <hr />
+            </div>
+            <!-- 아래 -->
+            <div class="detail-control">
+              <div class="price">
+                <P class="left">총 상품금액</P>
+                <P class="right">0 원</P>
+              </div>
+              <div class="order">
+                <button class="left btn btn-default">장바구니</button>
+                <button class="right btn btn-primary">구매하기</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 댓글 -->
+    <section>
+      <!-- 댓글도 container를 생성해서 만들어 준다 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <form action="" class="reply-wrap">
+              <!-- 이미지 영역 -->
+              <div class="reply-img">
+                <img src="img/nike_detail/profile.png" alt="프로필">
+              </div>
+              <div class="reply-content">
+                <!-- 
+                부트스트랩 클래스 사용 
+                https://www.w3schools.com/bootstrap/bootstrap_forms_inputs.asp
+                -->
+                <textarea class="form-control" rows="3"></textarea>
+                <!-- 부모상자 -->
+                <div class="reply-group">
+                  <!-- left -->
+                  <div class="left">
+                    <input type="text" class="form-control" placeholder="이름" />
+                    <input type="text" class="form-control" placeholder="비밀번호" />
+                  </div>
+                  <button class="right btn btn-info">글쓰기</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- 1번 코멘트 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <form action="" class="reply-wrap">
+              <div class="reply-img">
+                <img src="img/nike_detail/profile.png" alt="">
+              </div>
+              <div class="reply-content">
+                <div class="reply-group">
+                  <strong>아이디가뭘까요?</strong> 
+                  <small>2020/08/08</small>
+                  <a href="" class="right"><i class="glyphicon glyphicon-pencil"></i><span>수정</span></a>
+                  <a href="" class="right"><i class="glyphicon glyphicon-remove"></i><span>삭제</span></a>
+                  <p>아이스크림은 제발 사드세요........</p>
+                </div> 
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- 2번 코멘트 -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <form action="" class="reply-wrap">
+              <div class="reply-img">
+                <img src="img/nike_detail/profile.png" alt="">
+              </div>
+              <div class="reply-content">
+                <div class="reply-group">
+                  <strong>아이디가뭘까요?</strong> 
+                  <small>2020/08/08</small>
+                  <a href="" class="right"><i class="glyphicon glyphicon-pencil"></i><span>수정</span></a>
+                  <a href="" class="right"><i class="glyphicon glyphicon-remove"></i><span>삭제</span></a>
+                  <p>치킨은 제발 사드세요........</p>
+                </div> 
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- footer영역 -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- 상자 구도 잡기 -->
+          <div class="col-md-6 col-sm-12">
+            <div class="footer-copyright">
+              <a href="#"><img src="img/logo.svg" width="20" alt=""></a>
+              Coding404 | 대표자 : 홍길동 | E-MAIL : asd123@gmail.com <br />
+              개인정보보호책임자 : 홍길동 | kakao에서 오프라인 강의를 진행합니다 <br />
+              주소 : 서울시 강남구
+              <address>@Bootstrap. ALL RIGHT REVERSED</address>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+
+            <ul class="footer-menu">
+              <li><a href="">유용한정보</a></li>
+              <li><a href="">이용약관</a></li>
+              <li><a href="">고객센터</a></li>
+              <li><a href="">개인정보 취급방침</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,96 @@
+/* 버튼의 윤곽 */
+/* ======form btn윤각====== */
+.form-control {
+  border-radius: 0;
+}
+.btn {
+  border-radius: 0;
+}
+/* ============header============== */
+section {
+  /* 헤더길이만큼 본문을 내림 */
+  margin-top: 50px;
+}
+.my-header {
+  background-color: rgb(0, 0, 0);
+  /* body기준 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.my-header a {
+  color: white;
+  font-size: large;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+/*.my-header*/
+.navbar-brand {
+  padding: 10px 20px;
+  /*padding-top: 10px;*/
+}
+
+/*헤더 로고 찍으면 색 변함*/
+.my-header .navbar-brand:hover {
+  background-color: rgb(230, 143, 29);
+  background-size: 30px;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: rgb(230, 166, 48);
+}
+
+.nav > .open,
+.nav > .open > a:focus,
+.nav > .open > a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar-toggle {
+  border-color: white;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+/* ===============footer=============== */
+footer {
+  background-color: black;
+  color: white;
+  font-size: 13px;
+  /* 위 아래 40씩 */
+  padding: 40px 0;
+  /* 본문영역과 붙지 않도록 생성 */
+  margin-top: 70px;
+}
+
+/* 마진 없애주기 */
+footer .copy-right address {
+  margin-bottom: 0;
+}
+
+footer .footer-menu {
+  /* 블럭이기 때문에 text-align으로 밀린다 */
+  text-align: right;
+  /* class=text-right: 부트스트랩에서 제공하는 float: right로 대체 가능하다*/
+}
+
+footer .footer-menu li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+footer .footer-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+

@@ -230,10 +230,3 @@ footer .footer-menu li a {
   float: right;
   padding: 4px 12px;
 }
-/*================================================ */
-/* 모루겟다 */
-@media (max-width: 767px) {
-  .prod-info span {
-    width: 100%;
-  }
-}
