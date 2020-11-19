@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 참조파일 -->
+    <!-- Carousel사용을 위해 버전 업! -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- css디자인 -->
+    <link rel="stylesheet" href="css/style-reset.css">
+    <link rel="stylesheet" href="css/style-section.css">
+
+  </head>
+  <div class="img-big">
+
+    <body>
+      <header class="title-header">
+        <div class="title-zara">
+          <div class="title-name">
+            <!-- 대문 + 상품목록 리스트 -->
+            <span>Z A R A</span>
+          </div>
+          <nav>
+            <ul class="title-list">
+              <li><a href="#">WOMAN</a></li>
+              <li><a href="#">TRF</a></li>
+              <li><a href="#">MAN</a></li>
+              <li><a href="#">KIDS</a></li>
+              <li><a href="#">EDITORIALS</a></li>
+            </ul>
+          </nav>
+          <!-- 로그인, 가입(포지션) -->
+          <div class="title-menu">
+            <!-- #화면이 작아지면 없애주자 -->
+            <a href="#"><span>LOGIN</span></a>
+            <a href="#"><span>REGISTER</span></a>
+          </div>
+        </div>
+      </header>
+      <!-- 오른쪽 배너 -->
+      <aside class="side-right">
+        <ul>
+          <li>
+            <a href="#">
+              <p>전화문의</p>
+              <p>010-123-1234</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="middle">
+              <p>카카오톡</p>
+              <p>1:1상담</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>오시는길</p>
+            </a>
+          </li>
+        </ul>
+
+      </aside>
+
+      <section class="sec">
+        <!-- 큰 이미지 -->
+        <div class="img-big col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <!-- 슬라이드 생성 -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <!-- 넘어갈 이미지 -->
+            <div class="carousel-inner">
+              <!-- 활성중: active -->
+              <div class="item active">
+                <a href="#">
+                  <img src="img/main.jpg" alt="슬라이드1">
+                </a>
+              </div>
+
+              <div class="item">
+                <a href="#">
+                  <img src="img/main.jpg" alt="슬라이드2">
+                </a>
+              </div>
+            </div>
+
+            <!-- 왼쪽, 오른쪽 컨트롤러 -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!-- 텍스트 -->
+            <div class="img-text">
+              <h1>Category Banner</h1>
+              <p>Upload image and description</p>
+              <p>Upload image and description</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- 작은이미지 -->
+        <div class="img-small col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul>
+            <li>
+              <img src="img/img_01.jpg" alt="">
+              <h4>Product with Variants</h4>
+              <p>★★★☆☆ 2REVIEW(S)</p>
+              <small>$59.00</small>
+              <div class="img-hover">
+                <a href="#">Jaket</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/img_02.jpg" alt="">
+              <h4>Product with Variants</h4>
+              <p>★★★☆☆ 2REVIEW(S)</p>
+              <small>$59.00</small>
+              <div class="img-hover">
+                <a href="#">Jaket</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/img_03.jpg" alt="">
+              <h4>Product with Variants</h4>
+              <p>★★★☆☆ 2REVIEW(S)</p>
+              <small>$59.00</small>
+              <div class="img-hover">
+                <a href="#">Jaket</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/img_04.jpg" alt="">
+              <h4>Product with Variants</h4>
+              <p>★★★☆☆ 2REVIEW(S)</p>
+              <small>$59.00</small>
+              <div class="img-hover">
+                <a href="#">Jaket</a>
+              </div>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <img src="img/img_05.jpg" alt="">
+              <h4>Product with Variants</h4>
+              <p>★★★☆☆ 2REVIEW(S)</p>
+              <small>$59.00</small>
+              <div class="img-hover">
+                <a href="#">Jaket</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/img_06.jpg" alt="">
+              <h4>Product with Variants</h4>
+              <p>★★★☆☆ 2REVIEW(S)</p>
+              <small>$59.00</small>
+              <div class="img-hover">
+                <a href="#">Jaket</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/img_07.jpg" alt="">
+              <h4>Product with Variants</h4>
+              <p>★★★☆☆ 2REVIEW(S)</p>
+              <small>$59.00</small>
+              <div class="img-hover">
+                <a href="#">Jaket</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/img_08.jpg" alt="">
+              <h4>Product with Variants</h4>
+              <p>★★★☆☆ 2REVIEW(S)</p>
+              <small>$59.00</small>
+              <div class="img-hover">
+                <a href="#">Jaket</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+
+
+    </body>
+
+</html>

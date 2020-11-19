@@ -1,0 +1,184 @@
+/* header */
+.title-header {
+  /* 고정으로 박기 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+.title-zara .title-name {
+  font-size: 90px;
+  background-color: white;
+}
+
+.title-name {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.title-zara nav .title-list {
+  text-align: center;
+  padding: 0 5%;
+  margin-bottom: 0;
+  height: 30px;
+  background-color: #777777;
+}
+
+.title-zara .title-list li {
+  display: inline;
+  margin-left: 5%;
+  vertical-align: middle;
+}
+
+.title-zara .title-list li a {
+  color: white;
+  text-decoration: none;
+}
+.title-list li a:hover {
+  border-bottom: 2px solid white;
+}
+/* 로그인 + 가입 배너*/
+.title-menu {
+  position: absolute;
+  top: 0;
+  right: 3%;
+  padding: 30px 0;
+}
+.title-menu a {
+  margin-left: 20px;
+  color: black;
+  font-size: large;
+  text-decoration: none;
+}
+/* ===================================== */
+/* 사이드 바 */
+.side-right {
+  /* fixed == 고정(스크롤 내려도 따라옴) */
+  position: fixed;
+  top: 400px;
+  right: 0px;
+  width: 100px;
+  z-index: 30;
+}
+.side-right ul {
+  background-color: #333333;
+}
+.side-right li {
+  text-align: center;
+
+  margin-bottom: 0;
+}
+.side-right .middle {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+.side-right li a {
+  /* 인라인 > 블럭 을 막을라구 */
+  display: block;
+  padding: 10px 0;
+  font-size: 12px;
+}
+.side-right li p {
+  margin-bottom: 0;
+  color: white;
+}
+
+/* ===================================== */
+/* 본문 */
+.sec {
+  margin-top: 150px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+/* 메인 이미지 */
+.img-big {
+  margin: 0 auto;
+  /* 모바일이면 패딩 > 0 */
+  padding: 0 30px;
+}
+.img-big img {
+  width: 1200px;
+}
+/* 메인 이미지 텍스트 */
+.img-big div .img-text {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+}
+.img-text h1 {
+  background-color: rgba(0, 0, 0, 0.322);
+  padding: 10px;
+  font-weight: bolder;
+}
+.img-text p {
+  font-size: 17px;
+}
+
+/* 메인이미지 슬라이더 */
+/* https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_carousel&stacked=h */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  margin: 0 auto;
+}
+/* ============================ */
+/* 이미지 리스트 */
+.img-small {
+  margin: 30px auto;
+  padding: 0;
+}
+.img-small ul {
+  padding: 0 4%;
+  text-align: center;
+}
+.img-small li {
+  padding: 0 1%;
+  margin-bottom: 1%;
+  float: left;
+  width: 25%;
+  position: relative;
+}
+.img-small ul li p {
+  margin-bottom: -5px;
+}
+/* hover처리 */
+.img-small ul li .img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+.img-small .img-hover a {
+  /* 블럭으로 할 것! */
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* hover효과 */
+.img-small ul li .img-hover:hover {
+  opacity: 1;
+}
+
+/* 사이즈 처리 */
+/* 참조: https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp */
+@media (max-width: 767px) {
+  /* xs사이즈이 일 때 안보임 */
+  .side-right {
+    display: none;
+  }
+  .title-menu {
+    display: none;
+  }
+  /* 복잡하니 이것도 안보이게 처리 */
+  .img-text {
+    display: none;
+  }
+}

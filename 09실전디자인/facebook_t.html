@@ -5,17 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 부트스트랩 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- 개인 디자인 추가 -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style-tabs.css">
-
+    <link rel="stylesheet" href="css/style-facebook.css">
     <style type="text/css">
-      /* 토글탭 디자인 */
+      .section-facebook {
+        border-right: 1px solid #cccccc;
+        border-left: 1px solid #cccccc;
+
+      }
+
+      .title-inner {
+        position: relative;
+        margin-bottom: 10px;
+      }
+
+      .title-inner .profile {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .title-inner .title {
+        padding-left: 60px;
+      }
+
+      .content-inner {
+        padding: 10px 0;
+      }
+
+      .like-inner,
+      .button-inner {
+        border-top: 1px solid #cccccc;
+      }
+
+      .like-inner {
+        margin-top: 10px;
+        padding: 5px 0;
+      }
+
+      .like-inner a {
+        text-decoration: none;
+        color: black;
+      }
+
+      /* 이미지와 숫자를 공간의 중간으로 맞춤 */
+      .like-inner span {
+        vertical-align: middle;
+      }
+
+      .button-inner {
+        overflow: hidden;
+      }
+
+      .button-inner a {
+        float: left;
+        width: 33.333333%;
+        text-align: center;
+        color: black;
+        padding: 10px 0;
+      }
+
+      .button-inner i {
+        margin: 0 5px;
+      }
+
+      @media(max-width: 767px) {
+        .aside-facebook {
+          display: none;
+        }
+      }
     </style>
+
   </head>
 
   <body>
@@ -65,95 +131,73 @@
         </div>
       </nav>
     </header>
-
-    <section>
+    <!-- 사이즈가 점점 줄어들다 모바일 환경이면 좌측을 없애줌 > 미디어 쿼리 사용 -->
+    <!-- 작성자 = 포지션 -->
+    <section style="margin-top: 80px;">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12">
-            <div class="title-box">
-              탭탭탭~탭소닉~
+          <!-- 좌측으로 빠지를 class를 aside로 생성한다 -->
+          <!-- div=aside 같은 블럭형태 -->
+          <aside class="aside-facebook col-sm-3">
+            <div class="menu1">
+              <div>
+                <img src="img/facebook/profile.png" alt="">
+                반재현
+              </div>
+              <ul>
+                <li>뉴스피드</li>
+                <li>메신저</li>
+                <li>watch동영상</li>
+              </ul>
             </div>
-            <!-- 탭을 눌었을 때 -->
-            <!-- li의 아이디와 tab-content안에 id속성이 연결되어 있는 형태 -->
-
-            <!-- ul에 개인디자인 클래스 선언(현재 예전에 만들어 놓은 css가 적용되어 있음) -->
-            <ul class="tabs-basic nav nav-tabs">
-              <!-- active: 활성화 되어있는곳, href: id와 연결해서 작동하게 된다 -->
-              <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-              <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-              <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-              <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
-            </ul>
-
-            <div class="tab-content">
-              <div id="home" class="tab-pane fade in active">
-                <h3>HOME</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua.</p>
+            <div class="menu2">
+              <ul>
+                <li>둘러보기</li>
+                <li>기부 캠페인</li>
+                <li>페이지</li>
+                <li>그룹</li>
+                <li>이벤트</li>
+                <li>친구리스트</li>
+              </ul>
+            </div>
+          </aside>
+          <!-- 우측 본문 -->
+          <!-- 5칸의 공간을 만들어서 작성한다 -->
+          <div class="section-facebook col-xs-12 col-sm-9">
+            <!-- 컨텐츠영역 -->
+            <div class="title-inner">
+              <div class="profile">
+                <img src="img/facebook/profile.png" alt="프로필" width="50px">
               </div>
-              <div id="menu1" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</p>
+              <div class="title">
+                <p>이름</p>
+                <small>21시간</small>
               </div>
-              <div id="menu2" class="tab-pane fade">
-                <h3>Menu 2</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                  totam rem aperiam.</p>
-              </div>
-              <div id="menu3" class="tab-pane fade">
-                <h3>Menu 3</h3>
-                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                </p>
-              </div>
+            </div>
+            <div class="conten-inner">
+              <p>삶이 우리를 끝없이 시험하기에 고어텍스는 한계를 테스트합니다</p>
+            </div>
+            <div class="image-inner">
+              <!-- 맨 처음에 이미지 사이즈를 잡아주었기(reset.css > 100%) 때문에 자동으로 맞춰질꺼다 -->
+              <img src="img/facebook/img01.jpg" alt="이미지">
+            </div>
+            <div class="like-inner">
+              <a href="">
+                <img src="img/facebook/like.svg" alt="" width="20px">
+                <span>522</span>
+              </a>
+            </div>
+            <div class="button-inner">
+              <!-- 버튼영역: a > span > i  -->
+              <a href="#"><span><i class="glyphicon glyphicon-thumbs-up"></i>좋아요</span></a>
+              <a href="#"><span><i class="glyphicon glyphicon-comment"></i>댓글달기</span></a>
+              <a href="#"><span><i class="glyphicon glyphicon-share-alt"></i>공유하기</span></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="row">
-          <!-- 사이즈 조정(을 위해 이름 생성) -->
-          <div class="tabs-style col-xs-12 col-md-10 col-lg-9">
-            <div class="title-box">
-              탭탭탭~탭소닉~
-            </div>
-            <!-- 탭을 눌었을 때 -->
-            <!-- li의 아이디와 tab-content안에 id속성이 연결되어 있는 형태 -->
-
-            <!-- ul에 개인디자인 클래스 선언(현재 예전에 만들어 놓은 css가 적용되어 있음) -->
-            <ul class="tabs-basic2 nav nav-tabs">
-              <!-- active: 활성화 되어있는곳, href: id와 연결해서 작동하게 된다 -->
-              <li class="active"><a data-toggle="tab" href="#tab1">Home</a></li>
-              <li><a data-toggle="tab" href="#tab2">Menu 1</a></li>
-              <li><a data-toggle="tab" href="#tab3">Menu 2</a></li>
-
-            </ul>
-
-            <div class="tab-content">
-              <div id="tab1" class="tab-pane fade in active">
-                <h3>HOME</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua.</p>
-              </div>
-              <div id="tab2" class="tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</p>
-              </div>
-              <div id="tab3" class="tab-pane fade">
-                <h3>Menu 2</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                  totam rem aperiam.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
-
 
     <footer>
       <div class="container">
@@ -180,7 +224,6 @@
         </div>
       </div>
     </footer>
-
   </body>
 
 </html>

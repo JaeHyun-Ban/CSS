@@ -1,0 +1,43 @@
+/* 폰트 추가 */
+/* Noto Serif KR */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+
+/* 전역설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  /* 폰트적용 */
+  font-family: "Noto Serif KR", serif;
+  width: 100%;
+  /* 최소사이즈 */
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button,
+select {
+  /* 여러 브라우저 통일 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+ul,
+li,
+ol,
+dl {
+  list-style: none;
+}
